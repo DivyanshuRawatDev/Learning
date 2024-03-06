@@ -47,9 +47,21 @@ describe.only("UI test case group", () => {
 
 //Testing on onChange with fire event:-
 
+/*
 test("onChange", () => {
   render(<App />);
   const input = screen.getByRole("textbox");
   fireEvent.change(input, { target: { value: "a" } });
   expect(input.value).toBe("a");
 });
+*/
+
+//Testing on button with fire event :-
+
+/* test("Button Click Test", () => {
+  render(<App />);
+  const btn = screen.getByRole("button");
+  fireEvent.click(btn);
+  expect(screen.getByText("Updated Value")).toBeInTheDocument();
+});
+*/

@@ -4,6 +4,7 @@ import { useState } from "react";
 
 function App() {
   const [data, setData] = useState("");
+  const [value, setValue] = useState("");
 
   return (
     <div className="App">
@@ -15,6 +16,14 @@ function App() {
           setData(e.target.value);
         }}
       />
+      <button
+        onClick={() => {
+          setValue("Updated Value");
+        }}
+      >
+        Update Data
+      </button>
+      <h1>{value}</h1>
     </div>
   );
 }
