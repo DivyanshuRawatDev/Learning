@@ -58,15 +58,25 @@ test("onChange", () => {
 
 //Testing on button with fire event :-
 
+/*
 test("Button Click Test", () => {
   render(<App />);
   const btn = screen.getByRole("button");
   fireEvent.click(btn);
   expect(screen.getByText("Updated Value")).toBeInTheDocument();
 });
+*/
 
 //Before all - one time run / beforeEach - each time / after all :-
 
+/*
 beforeAll(() => {
   console.log("HEllo");
+});
+*/
+
+// Snapshot
+test("snapshot", () => {
+  let container = render(<App />);
+  expect(container).toMatchSnapshot();
 });
