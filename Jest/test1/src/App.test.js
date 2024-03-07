@@ -76,7 +76,46 @@ beforeAll(() => {
 */
 
 // Snapshot
-test("snapshot", () => {
+
+/* test("snapshot", () => {
   let container = render(<App />);
   expect(container).toMatchSnapshot();
 });
+*/
+
+// What should we do :-
+
+/*
+- Testing component rendering 
+- UI elements that we write
+- Functions which we write
+- Event Testing
+- Props an states
+- UI condition testing | UI state testing
+*/
+
+// What should we not do :-
+/*
+- External UI library code
+- No need to test default function of JS and React
+- Sometimes we should mock function rather that testing it in details
+- Do not write snapshots in starting of the project
+- Run test case after completing your functionality
+- Make a standard for code coverage
+*/
+
+// RTL Queries :-
+
+/*
+
+// Find Single Element 
+- getBy
+- queryBy
+- findBy
+
+// Find Multiple elements
+- grtAllBy
+- queryAllBy
+- findAllBy
+
+*/
