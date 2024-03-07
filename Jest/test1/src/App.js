@@ -15,6 +15,7 @@ function App() {
         onChange={(e) => {
           setData(e.target.value);
         }}
+        disabled
       />
       <button
         onClick={() => {

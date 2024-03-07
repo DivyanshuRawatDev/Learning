@@ -114,8 +114,17 @@ beforeAll(() => {
 - findBy
 
 // Find Multiple elements
-- grtAllBy
+- getAllBy
 - queryAllBy
 - findAllBy
 
 */
+
+// GetByRole Quesies are in RTL Queries
+
+test("Get Role", () => {
+  render(<App />);
+  const input = screen.getByRole("textbox");
+  expect(input).toBeInTheDocument();
+  expect(input).toBeDisabled();
+});
